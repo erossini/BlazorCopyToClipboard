@@ -4,6 +4,8 @@
 This is a CopyToClipboard component for [Blazor WebAssembly](https://www.puresourcecode.com/tag/blazor-webassembly/) and [Blazor Server](https://www.puresourcecode.com/tag/blazor-server/) with .NET6.
 When the user press the button, the component copies the text in the system clipboard. So, the user can paste the text everywhere else.
 
+For more details about the component, read me [post](https://www.puresourcecode.com/dotnet/blazor/copy-to-clipboard-component-for-blazor/). For support, open your question on my [Forum](https://www.puresourcecode.com/forum/copytoclipboard/).
+
 ## Status of the component
 The component is a button. When the user press the button the value of the property `Text` is trying to copy this value into the system clipboard.
 
@@ -35,7 +37,7 @@ If the component hadn't successfully copied the text into the clipboard, the but
 - [DataTable for Blazor](https://www.puresourcecode.com/dotnet/net-core/datatable-component-for-blazor/): DataTable component for Blazor WebAssembly and Blazor Server
 - [Markdown editor for Blazor](https://www.puresourcecode.com/dotnet/blazor/markdown-editor-with-blazor/): This is a Markdown Editor for use in Blazor. It contains a live preview as well as an embeded help guide for users.
 - [Modal dialog for Blazor](https://www.puresourcecode.com/dotnet/blazor/modal-dialog-component-for-blazor/): Simple Modal Dialog for Blazor WebAssembly
-- [PSC.Extensions](https://www.puresourcecode.com/dotnet/net-core/a-lot-of-functions-for-net5/): A lot of functions for .NET6 in a NuGet package that you can download for free. We collected in this package functions for everyday work to help you with claim, strings, enums, date and time, expressions…
+- [PSC.Extensions](https://www.puresourcecode.com/dotnet/net-core/a-lot-of-functions-for-net5/): A lot of functions for .NET6 in a NuGet package that you can download for free. We collected in this package functions for everyday work to help you with claim, strings, enums, date and time, expressionsâ€¦
 - [Quill for Blazor](https://www.puresourcecode.com/dotnet/blazor/create-a-blazor-component-for-quill/): Quill Component is a custom reusable control that allows us to easily consume Quill and place multiple instances of it on a single page in our Blazor application
 - [Segment for Blazor](https://www.puresourcecode.com/dotnet/blazor/segment-control-for-blazor/): This is a Segment component for Blazor Web Assembly and Blazor Server
 - [Tabs for Blazor](https://www.puresourcecode.com/dotnet/blazor/tabs-control-for-blazor/): This is a Tabs component for Blazor Web Assembly and Blazor Server
