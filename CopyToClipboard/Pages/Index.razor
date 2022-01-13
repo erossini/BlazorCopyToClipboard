@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<CopyToClipboardButton Text="@Body" />
+
+<div class="row">
+    <div class="col-6" height="100">
+        <textarea class="form-control" 
+        @bind-value="Body" 
+        @bind-value:event="oninput"></textarea>
+    </div>
+</div>
+
+@code {
+    public string Body { get; set; } = string.Empty;
+}

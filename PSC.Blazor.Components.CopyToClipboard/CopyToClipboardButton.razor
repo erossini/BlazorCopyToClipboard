@@ -1,0 +1,59 @@
+﻿@inject ClipboardService ClipboardService
+
+<button class="@buttonData.ButtonClass" disabled="@buttonData.IsDisabled" 
+        @onclick="ToClipboard" id="@Id">
+    <i class="@buttonData.FontAwesomeClass"></i> @buttonData.ButtonText
+</button>
+
+@code {
+    [Parameter] public string Id { get; set; } = "CopyToClipboard-" + Guid.NewGuid().ToString();
+    [Parameter] public string SuccessButtonClass { get; set; } = "btn btn-success";
+
+    [Parameter] public string InfoButtonClass { get; set; } = "btn btn-info";
+    [Parameter] public string ErrorButtonClass { get; set; } = "btn btn-danger";
+
+    [Parameter] public string CopyToClipboardText { get; set; } = "Copy to clipboard";
+    [Parameter] public string CopiedToClipboardText { get; set; } = "Copied to clipboard!";
+    [Parameter] public string ErrorText { get; set; } = "Oops. Try again.";
+
+    [Parameter] public string FontAwesomeCopyClass { get; set; } = "fa fa-clipboard";
+    [Parameter] public string FontAwesomeCopiedClass { get; set; } = "fa fa-check";
+    [Parameter] public string FontAwesomeErrorClass { get; set; } = "fa fa-exclamation-circle";
+
+    [Parameter] public string Text { get; set; }
+
+    record ButtonData(bool IsDisabled, string ButtonText, string ButtonClass, string FontAwesomeClass);
+
+    ButtonData buttonData;
+
+    protected override void OnInitialized()
+    {
+        buttonData = new(false, CopyToClipboardText, InfoButtonClass, FontAwesomeCopyClass);
+        base.OnInitialized();
+    }
+
+    public async Task ToClipboard()
+    {
+        var originalData = buttonData;
+        try
+        {
+            await ClipboardService.WriteTextAsync(Text);
+
+            buttonData = new ButtonData(true, CopiedToClipboardText, SuccessButtonClass, FontAwesomeCopiedClass);
+            await TriggerButtonState();
+            buttonData = originalData;
+        }
+        catch
+        {
+            buttonData = new ButtonData(true, ErrorText, ErrorButtonClass, FontAwesomeErrorClass);
+            await TriggerButtonState();
+            buttonData = originalData;
+        }
+    }
+
+    private async Task TriggerButtonState()
+    {
+        StateHasChanged();
+        await Task.Delay(TimeSpan.FromMilliseconds(1500));
+    }
+}

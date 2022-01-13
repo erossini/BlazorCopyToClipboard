@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopyToClipboard", "CopyToClipboard\CopyToClipboard.csproj", "{192E72C0-B374-45BD-8956-19D2B11779FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSC.Blazor.Components.CopyToClipboard", "PSC.Blazor.Components.CopyToClipboard\PSC.Blazor.Components.CopyToClipboard.csproj", "{B2E94F36-09D5-4AD8-A85C-82E8F8496D9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other files", "Other files", "{B4E437EB-BACC-469F-88D2-D54D584C91F6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{192E72C0-B374-45BD-8956-19D2B11779FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192E72C0-B374-45BD-8956-19D2B11779FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192E72C0-B374-45BD-8956-19D2B11779FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192E72C0-B374-45BD-8956-19D2B11779FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E94F36-09D5-4AD8-A85C-82E8F8496D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E94F36-09D5-4AD8-A85C-82E8F8496D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E94F36-09D5-4AD8-A85C-82E8F8496D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E94F36-09D5-4AD8-A85C-82E8F8496D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B7FBEFA-E18C-4143-8A21-B0557B730988}
+	EndGlobalSection
+EndGlobal
