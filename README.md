@@ -31,6 +31,8 @@ If the component hadn't successfully copied the text into the clipboard, the but
 | FontAwesomeCopiedClass | Based on [FontAwesome](https://fontawesome.com/) the icon to display after the component successfully copied the text into the system clipboard | fa fa-check |
 | FontAwesomeErrorClass | Based on [FontAwesome](https://fontawesome.com/) the icon to display when the component had an error to copy the text into the clipboard | fa fa-exclamation-circle |
 
+---
+
 ## Other Blazor components
 
 | Component name | Forum | Description |
